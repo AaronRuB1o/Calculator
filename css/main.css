@@ -17,7 +17,6 @@ body{
     /* height: auto; */
 }
 
-
 .calcBox{
     width: 500px;
     height: 600px;
@@ -39,6 +38,15 @@ body{
     height: 25%;
     border-radius: 8px;
     background-color: var(--SILVER);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayBox{
+    height: 80%;
+    width: 90%;
+    background: var(--BACKGROUND);
 }
 
 .numpadBox{
@@ -46,4 +54,19 @@ body{
     width: 100%;
     border-radius: 8px;
     background-color: var(--SILVER);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numBox{
+    flex: 2 25%;
+    width: 70px;
+    height: 70px;
+    background: red;
+    color: white;
+    display: grid;
+    place-items: center;
+    margin: 4px;
+    font-weight: bold;
+    border-radius: 5px; /* optional */
 }
